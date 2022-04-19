@@ -1,2 +1,20 @@
 <title>Movie Collection</title>
 <h1>{{ movies[0] }}!</h1>
+
+<table>
+    <tr>
+        <th> Id> </th>
+        <th> Title </th>
+        <th> Tagline </th>
+    </tr>
+
+    {% for movie in movies %}
+
+    <tr>
+        <th> {{ movie ['id'] }} </th>
+        <th> {{ movie ['title'] }} </th>
+        <th> {{ movie ['tagline'] }} </th>
+    </tr>
+
+    {% endfor %}
+</table>
