@@ -1,2 +1,22 @@
+<!-- This puts the movies into tables and displays them in movie, tagline, and ID order -->
+
 <title>Movie Collection</title>
-<h1>{{ movies[0] }}!</h1>
+<h1 styel="center">Movie List</h1>
+
+<table>
+    <tr>
+        <th> Title </th>
+        <th> Tagline </th>
+        <th> Id </th>
+    </tr>
+
+    {% for movie in movies %}
+
+    <tr>
+        <th> {{ movie ['title'] }} </th>
+        <th> {{ movie ['tagline'] }} </th>
+        <th> {{ movie ['id'] }} </th>
+    </tr>
+
+    {% endfor %}
+</table>
