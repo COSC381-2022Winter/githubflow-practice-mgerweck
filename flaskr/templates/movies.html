@@ -1,19 +1,19 @@
 <title>Movie Collection</title>
-<h1>{{ movies[0] }}!</h1>
+<h1>Movie List</h1>
 
 <table>
     <tr>
-        <th> Id> </th>
         <th> Title </th>
         <th> Tagline </th>
+        <th> Id </th>
     </tr>
 
     {% for movie in movies %}
 
     <tr>
-        <th> {{ movie ['id'] }} </th>
         <th> {{ movie ['title'] }} </th>
         <th> {{ movie ['tagline'] }} </th>
+        <th> {{ movie ['id'] }} </th>
     </tr>
 
     {% endfor %}
